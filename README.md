@@ -11,18 +11,17 @@ $ chmod +x /usr/local/bin/pinboard-backuper.sh
 ```
 
 ### USAGE: 
+```
 All arguments are required.
-
 ARGUMENTS:
-	 ?   Display this help.    
+	?   Display this help.
 	-t   Pinboard API token in <username>:<token> format. See https://pinboard.in/settings/password. 
 	-p   Path to destination folder.
 	-r   Count of prior backups to retain. Use "0" to never delete old backups.
-    -v   Verbose (0 | 1)
-    -d   DEBUG (0 | 1)
-
-A crontab entry should look something like -
+	-v   Verbose (0 | 1)
+	-d   DEBUG (0 | 1)
 ```
-0 1 * * * Pinboard-backuper.sh -t "<token>" -p <destination path> -r <retention>  -v 0 -d 0
-
+A crontab entry would look something like -
+```
+0 1 * * * Pinboard-backuper.sh -t "<token>" -p "<destination path>" -r <retention>  -v 0 -d 0
 ```
