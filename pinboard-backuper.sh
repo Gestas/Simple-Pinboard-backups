@@ -14,6 +14,8 @@ LOG_FILE="pinboard-backups.log"
 # How long to delay between API calls. Rate limits - https://pinboard.in/api/
 RATE_SECS="5"
 
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
 usage () {
 /usr/bin/cat << EOF
 
